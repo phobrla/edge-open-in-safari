@@ -29,8 +29,7 @@ Create a JSON configuration file to register the native messaging host with your
 
 The `open_in_safari.py` script should be located at the path specified in the configuration file and should be executable. Below is a sample script:
 
-```
-python
+```python
 # Originally located at \\\\Mac\\Home\\Documents\\Software\\_Scripts\\open_in_safari.py"
 # needs to be given writeability using command "chmod +x /Users/phobrla/Documents/Software/_Scripts/open_in_safari.py"
 #!/usr/bin/env python3
