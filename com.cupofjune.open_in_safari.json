@@ -1,5 +1,5 @@
 {
-    "_comment": "Originally located at \\\\Mac\\Home\\Library\\Application Support\\Microsoft Edge\\NativeMessagingHosts\\com.cupofjune.open_in_safari.json; create using mkdir -p ~\/Library/Application\\ Support/Microsoft\\ Edge\\ NativeMessagingHosts\/"
+    "_comment": "Originally located at \\\\Mac\\Home\\Library\\Application Support\\Microsoft Edge\\NativeMessagingHosts\\com.cupofjune.open_in_safari.json; create using mkdir -p ~\/Library/Application\\ Support/Microsoft\\ Edge\\ NativeMessagingHosts\/",
     "name": "com.cupofjune.openinsafari",
     "description": "Open URLs in Safari",
     "path": "/Users/phobrla/Documents/Software/_Scripts/open_in_safari.py",

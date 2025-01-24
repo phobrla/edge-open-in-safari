@@ -15,8 +15,12 @@ def main():
         url = message.get("url")
 
         if url:
-            # Open the URL in Safari
-            subprocess.run(["open", "-a", "Safari", url])
+            # Open the URL using the URL protocol
+            subprocess.run([
+                "C:\\Windows\\System32\\rundll32.exe",
+                "url.dll,FileProtocolHandler",
+                url
+            ])
 
         # Send success response
         send_response({"success": True})
