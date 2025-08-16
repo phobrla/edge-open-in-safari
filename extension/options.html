@@ -1,0 +1,38 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Open in Safari (Mac) - Options</title>
+    <link rel="stylesheet" href="options.css">
+  </head>
+  <body>
+    <div class="container">
+      <h1>Open in Safari (Mac) - Options</h1>
+      <p>Set the connection to your Mac helper. These should match the dialog shown by the mac/open_in_safari.command script.</p>
+      <form id="opts">
+        <label>
+          Host (Mac IP on Parallels network)
+          <input type="text" id="host" placeholder="10.211.55.2">
+        </label>
+        <label>
+          Port
+          <input type="number" id="port" min="1" max="65535" placeholder="51888">
+        </label>
+        <label>
+          Token
+          <input type="text" id="token" placeholder="changeme123456">
+        </label>
+        <label class="checkbox">
+          <input type="checkbox" id="https">
+          Use HTTPS (only if you terminate TLS yourself)
+        </label>
+        <div class="buttons">
+          <button type="button" id="save">Save</button>
+          <button type="button" id="test">Test Connection</button>
+        </div>
+      </form>
+      <pre id="status" class="status"></pre>
+    </div>
+    <script src="options.js"></script>
+  </body>
+</html>

@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+Template LaunchAgent. The mac/open_in_safari.command script will install a resolved copy
+to ~/Library/LaunchAgents/com.phobrla.open-in-safari.plist with correct paths and env vars.
+-->
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+  <key>Label</key><string>com.phobrla.open-in-safari</string>
+  <key>ProgramArguments</key>
+  <array>
+    <string>/usr/bin/python3</string>
+    <string>__SCRIPT_DIR__/open_in_safari_server.py</string>
+  </array>
+  <key>RunAtLoad</key><true/>
+  <key>KeepAlive</key><true/>
+  <key>StandardOutPath</key><string>__SCRIPT_DIR__/open_in_safari_server.out.log</string>
+  <key>StandardErrorPath</key><string>__SCRIPT_DIR__/open_in_safari_server.err.log</string>
+  <key>EnvironmentVariables</key>
+  <dict>
+    <key>OIS_PORT</key><string>51888</string>
+    <key>OIS_BIND</key><string>0.0.0.0</string>
+    <key>OIS_TOKEN</key><string>changeme123456</string>
+    <key>OIS_ALLOWED_SUBNETS</key><string>10.211.55.0/24,10.37.129.0/24</string>
+  </dict>
+</dict>
+</plist>

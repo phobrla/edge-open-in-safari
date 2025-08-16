@@ -1,97 +1,95 @@
-# Open in Safari
+# Open in Safari (Edge → Mac via Parallels)
 
-This project provides a way to open URLs in Safari from other browsers using a native messaging host.
+Open the current Microsoft Edge tab (running in Windows inside Parallels) directly in Safari on your Mac.
 
-## Description
+This repo provides:
+- A macOS helper (zsh orchestrator + Python 3 server) that safely accepts open-URL requests and launches Safari.
+- A Microsoft Edge extension that sends the current page URL to the Mac helper.
 
-The `open_in_safari` script allows users to open URLs directly in Safari from other browsers like Chrome and Edge using a native messaging host.
+Tested assumptions:
+- macOS: Apple Silicon (Monterey 12+ recommended), Python 3 available at /usr/bin/python3.
+- Parallels Desktop with Parallels Tools installed; Windows guest can reach the Mac host IP on the Parallels virtual network (e.g., 10.211.55.2).
+- Microsoft Edge (Chromium-based) on Windows.
 
-## Configuration
+Security:
+- The macOS helper binds to your Mac only and validates:
+  - Source IP is in allowed Parallels subnets (default 10.211.55.0/24, 10.37.129.0/24).
+  - A shared token must match (configurable).
+- CORS headers are enabled for the Edge extension to call the helper.
 
-### Native Messaging Host Configuration
+Quick start
 
-Create a JSON configuration file to register the native messaging host with your browser. Below is an example configuration:
+1) On your Mac (host):
+- Double-click mac/open_in_safari.command
+- It will:
+  - Start the Python server
+  - Install a LaunchAgent to run the server at login
+  - Show a dialog with the detected Mac host IP(s), port, and token
 
-```json
-{
-    "_comment": "Originally located at \\\\Mac\\Home\\Library\\Application Support\\Microsoft Edge\\NativeMessagingHosts\\com.cupofjune.open_in_safari.json; create using mkdir -p ~\/Library/Application\\ Support/Microsoft\\ Edge\\ NativeMessagingHosts\/"
-    "name": "com.cupofjune.openinsafari",
-    "description": "Open URLs in Safari",
-    "path": "/Users/phobrla/Documents/Software/_Scripts/open_in_safari.py",
-    "type": "stdio",
-    "allowed_origins": [
-        "chrome-extension://blejmdndaoijjaleenahpjdhkimhkmbf/"
-    ]
-}
-```
+2) In Windows (guest), install the Edge extension:
+- Edge → Extensions → Manage Extensions → Developer mode: On
+- Load unpacked → select the extension/ folder in this repo
 
-### Script
+3) Configure the extension:
+- Open the extension’s Options page
+- Set the Host IP to the one shown by the mac script dialog (e.g., 10.211.55.2)
+- Port should match (default 51888)
+- Token should match
+- Click “Test Connection” (should succeed)
 
-The `open_in_safari.py` script should be located at the path specified in the configuration file and should be executable. Below is a sample script:
+4) Use it:
+- Click the toolbar button “Open in Safari (Mac)”, or
+- Right-click a page/link/image and choose “Open in Safari (Mac)”, or
+- Use the shortcut Alt+Shift+S
 
-```python
-# Originally located at \\\\Mac\\Home\\Documents\\Software\\_Scripts\\open_in_safari.py"
-# needs to be given writeability using command "chmod +x /Users/phobrla/Documents/Software/_Scripts/open_in_safari.py"
-#!/usr/bin/env python3
-import sys
-import json
-import subprocess
+Files
 
-def main():
-    try:
-        # Read input from Chrome extension
-        input_line = sys.stdin.read()
-        message = json.loads(input_line)
+- mac/open_in_safari.command
+  - Double-click to install/start the macOS helper and LaunchAgent.
+- mac/open_in_safari_server.py
+  - Python 3 HTTP server that receives requests and opens Safari.
+- mac/launch/com.phobrla.open-in-safari.plist
+  - LaunchAgent template (the .command script installs a resolved copy to ~/Library/LaunchAgents).
+- extension/
+  - manifest.json: Edge extension manifest (MV3)
+  - background.js: Service worker (button, context menus, messaging)
+  - options.html/.js/.css: Options UI to set host, port, token, HTTPS
 
-        # Extract the URL from the message
-        url = message.get("url")
+Configuration
 
-        if url:
-            # Open the URL in Safari
-            subprocess.run(["open", "-a", "Safari", url])
+- mac/open_in_safari.command has a CONFIG section at top:
+  - PORT, BIND_ADDRESS, ALLOWED_SUBNETS, SHARED_TOKEN, INSTALL_LAUNCH_AGENT, DRY_RUN, VERBOSE
+- mac/open_in_safari_server.py has its own CONFIG with environment overrides:
+  - Environment vars set by the LaunchAgent (OIS_PORT, OIS_BIND, OIS_TOKEN, OIS_ALLOWED_SUBNETS) override the Python defaults.
+- extension/options page stores settings in chrome.storage.sync with defaults:
+  - Host: 10.211.55.2
+  - Port: 51888
+  - Token: changeme123456
+  - HTTPS: off
 
-        # Send success response
-        send_response({"success": True})
-    except Exception as e:
-        send_response({"success": False, "error": str(e)})
+Notes
 
-def send_response(response):
-    response_str = json.dumps(response)
-    sys.stdout.write(response_str)
-    sys.stdout.flush()
+- Host IP in Parallels:
+  - Common defaults are 10.211.55.2 or 10.37.129.2 on vnic0/vnic1. The Mac script detects and lists these for you.
+- Firewall:
+  - The helper listens on the Mac; outbound from Windows (guest) typically succeeds by default.
+  - If you use third-party firewall software on macOS, allow inbound TCP to the chosen port.
+- Elevated privileges:
+  - Not required. LaunchAgent runs in your user context.
 
-if __name__ == "__main__":
-    main()
-```
+Uninstall
 
-## Usage
+- mac: Double-click the .command script again; choose to remove the LaunchAgent, or manually:
+  - launchctl bootout gui/$UID ~/Library/LaunchAgents/com.phobrla.open-in-safari.plist
+  - Remove the plist file
+- Windows: Remove the extension in Edge.
 
-To use this native messaging host, you need to implement a browser extension that sends a message with a URL to the native messaging host.
+References
 
-### Browser Extension Example
-
-```javascript
-chrome.runtime.onMessage.addListener((request, sender, sendResponse) => {
-    if (request.action === "openInSafari" && request.url) {
-        chrome.runtime.sendNativeMessage(
-            'com.cupofjune.openinsafari',
-            { url: request.url },
-            function(response) {
-                console.log("Response from native app:", response);
-            }
-        );
-    }
-});
-```
-
-## Languages Used
-
-- Python (35.7%)
-- JavaScript (31.1%)
-- HTML (19.1%)
-- Batchfile (14.1%)
-
-## License
-
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
-```
+- Python http.server: https://docs.python.org/3/library/http.server.html
+- Python ipaddress: https://docs.python.org/3/library/ipaddress.html
+- macOS open command: https://ss64.com/osx/open.html
+- LaunchAgents: https://www.launchd.info
+- Edge/Chrome Extensions (Manifest V3):
+  - https://developer.chrome.com/docs/extensions/mv3/
+  - https://learn.microsoft.com/microsoft-edge/extensions-chromium/

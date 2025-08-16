@@ -1,20 +1,30 @@
 {
-  "_comment": "Originally located at C:\\Users\\phobrla\\source\\repos\\Open in Safari\\manifest.json",
   "manifest_version": 3,
-  "name": "Open in Safari",
-  "version": "1.0",
-  "key": "blejmdndaoijjaleenahpjdhkimhkmbf",
-  "description": "Open the current URL in Safari on macOS",
-  "permissions": ["activeTab", "nativeMessaging"],
+  "name": "Open in Safari (Mac via Parallels)",
+  "version": "1.0.0",
+  "description": "Opens the current Edge page in Safari on your Mac when running Windows in Parallels.",
+  "permissions": [
+    "tabs",
+    "storage",
+    "contextMenus",
+    "notifications"
+  ],
+  "host_permissions": [
+    "<all_urls>"
+  ],
   "background": {
     "service_worker": "background.js"
   },
   "action": {
-    "default_popup": "popup.html",
-    "default_icon": {
-      "16": "icons/icon16.png",
-      "48": "icons/icon48.png",
-      "128": "icons/icon128.png"
+    "default_title": "Open in Safari (Mac)"
+  },
+  "options_page": "options.html",
+  "commands": {
+    "open-in-safari": {
+      "suggested_key": {
+        "default": "Alt+Shift+S"
+      },
+      "description": "Open current tab in Safari on Mac"
     }
   }
 }
