@@ -1,0 +1,631 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+		]
+	},
+	"buffers":
+	[
+		{
+			"file": "mac/open_in_safari.command",
+			"settings":
+			{
+				"buffer_size": 7098,
+				"encoding": "UTF-8",
+				"line_ending": "Unix"
+			},
+			"undo_stack":
+			[
+				[
+					7,
+					1,
+					"paste",
+					null,
+					"AQAAAAAAAAAAAAAAuhsAAAAAAAB6FQAAIyEvYmluL3pzaAojIEZpbGVuYW1lOiBvcGVuX2luX3NhZmFyaS5jb21tYW5kCiMgVmVyc2lvbjogMS4wLjAKIyBzZXQgLXggZm9yIHZlcmJvc2UgdHJhY2luZyBpZiBuZWVkZWQKc2V0IC1ldW8gcGlwZWZhaWwKSUZTPSQnXG5cdCcKCiMgV2hhdCBpdCBkb2VzOgojIC0gSW5zdGFsbHMgYW5kIHN0YXJ0cyBhIHVzZXIgTGF1bmNoQWdlbnQgdGhhdCBydW5zIG9wZW5faW5fc2FmYXJpX3NlcnZlci5weQojIC0gRGV0ZWN0cyBQYXJhbGxlbHMgdm5pYyBJUHMgYW5kIHNob3dzIHlvdSB0aGUgaG9zdCBJUChzKSwgcG9ydCwgYW5kIHRva2VuCiMgLSBEb3VibGUtY2xpY2sgZnJpZW5kbHk6IG5vIGFyZ3VtZW50cyByZXF1aXJlZAojCiMgUHJlcmVxdWlzaXRlczoKIyAtIG1hY09TIChBcHBsZSBTaWxpY29uIHJlY29tbWVuZGVkKQojIC0gUHl0aG9uIDMgYXQgL3Vzci9iaW4vcHl0aG9uMyAobWFjT1MgZGVmYXVsdCkKIyAtIFBhcmFsbGVscyBEZXNrdG9wIHdpdGggUGFyYWxsZWxzIFRvb2xzIGluc3RhbGxlZAojCiMgSG93IHRvIHVzZToKIyAtIERvdWJsZS1jbGljayB0aGlzIC5jb21tYW5kIGZpbGUuCiMgLSBGb2xsb3cgdGhlIGRpYWxvZyB0byBjb25maWd1cmUgdGhlIEVkZ2UgZXh0ZW5zaW9uIHdpdGggSG9zdCBJUCAvIFBvcnQgLyBUb2tlbi4KIwojIFJlZmVyZW5jZXM6CiMgLSBMYXVuY2hBZ2VudHM6IGh0dHBzOi8vd3d3LmxhdW5jaGQuaW5mbwojIC0gUHl0aG9uIGh0dHAuc2VydmVyOiBodHRwczovL2RvY3MucHl0aG9uLm9yZy8zL2xpYnJhcnkvaHR0cC5zZXJ2ZXIuaHRtbAoKIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMKIyBDT05GSUcgKGVkaXQgYXMgZGVzaXJlZCkKIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMKUE9SVD01MTg4OApCSU5EX0FERFJFU1M9IjAuMC4wLjAiCiMgQ29tbW9uIFBhcmFsbGVscyBzdWJuZXRzLiBLZWVwIGJvdGggZm9yIHZuaWMwL3ZuaWMxIGJ5IGRlZmF1bHQuCkFMTE9XRURfU1VCTkVUUz0oIjEwLjIxMS41NS4wLzI0IiAiMTAuMzcuMTI5LjAvMjQiKQpTSEFSRURfVE9LRU49ImNoYW5nZW1lMTIzNDU2IgoKIyBJbnN0YWxsIGEgTGF1bmNoQWdlbnQgdG8gcnVuIGF0IGxvZ2luCklOU1RBTExfTEFVTkNIX0FHRU5UPXRydWUKCiMgU2FmZXR5IGFuZCB2ZXJib3NpdHkKRFJZX1JVTj1mYWxzZQpWRVJCT1NFPXRydWUKCiMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjCiMgSW50ZXJuYWxzCiMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjClNDUklQVF9ESVI9IiQoY2QgIiQoZGlybmFtZSAiJDAiKSIgJiYgcHdkKSIKU0VSVkVSX1BZPSIke1NDUklQVF9ESVJ9L29wZW5faW5fc2FmYXJpX3NlcnZlci5weSIKTEFVTkNIX05BTUU9ImNvbS5waG9icmxhLm9wZW4taW4tc2FmYXJpIgpMQVVOQ0hfUExJU1Q9IiR7SE9NRX0vTGlicmFyeS9MYXVuY2hBZ2VudHMvJHtMQVVOQ0hfTkFNRX0ucGxpc3QiClBZVEhPTl9CSU49Ii91c3IvYmluL3B5dGhvbjMiCgpsb2coKSB7IGlmIFtbICIke1ZFUkJPU0V9IiA9PSAidHJ1ZSIgXV07IHRoZW4gZWNobyAiJEAiOyBmaSB9CnJ1bigpIHsgaWYgW1sgIiR7RFJZX1JVTn0iID09ICJ0cnVlIiBdXTsgdGhlbiBlY2hvICJbRFJZX1JVTl0gJEAiOyBlbHNlIGV2YWwgIiRAIjsgZmkgfQoKZW5zdXJlX3B5dGhvbigpIHsKICBpZiBbWyAhIC14ICIke1BZVEhPTl9CSU59IiBdXTsgdGhlbgogICAgZWNobyAiUHl0aG9uIDMgbm90IGZvdW5kIGF0ICR7UFlUSE9OX0JJTn0uIFBsZWFzZSBpbnN0YWxsIENvbW1hbmQgTGluZSBUb29scyBvciBQeXRob24gMy4iID4mMgogICAgZXhpdCAxCiAgZmkKfQoKZGV0ZWN0X3ZuaWNfaXBzKCkgewogIGxvY2FsIGlwcz0oKQogICMgdm5pYyBpbnRlcmZhY2VzIGFyZSB1c2VkIGJ5IFBhcmFsbGVscwogIGZvciBuaWMgaW4gJChpZmNvbmZpZyAtbCB8IHRyICcgJyAnXG4nIHwgZ3JlcCAtRSAnXnZuaWNbMC05XSskJyB8fCB0cnVlKTsgZG8KICAgIGxvY2FsIGlwCiAgICBpcD0kKGlmY29uZmlnICIke25pY30iIDI+L2Rldi9udWxsIHwgYXdrICcvaW5ldCAve3ByaW50ICQyfScpCiAgICBpZiBbWyAtbiAiJHtpcH0iIF1dOyB0aGVuCiAgICAgIGlwcys9KCIke2lwfSIpCiAgICBmaQogIGRvbmUKICAjIEZhbGxiYWNrIHRvIHByaW1hcnkgZW4gaW50ZXJmYWNlIGlmIG5vdGhpbmcgZm91bmQKICBpZiBbWyAkeyNpcHNbQF19IC1lcSAwIF1dOyB0aGVuCiAgICBsb2NhbCBwcmltYXJ5CiAgICBwcmltYXJ5PSQocm91dGUgLW4gZ2V0IGRlZmF1bHQgMj4vZGV2L251bGwgfCBhd2sgJy9pbnRlcmZhY2U6L3twcmludCAkMn0nIHx8IHRydWUpCiAgICBpZiBbWyAtbiAiJHtwcmltYXJ5fSIgXV07IHRoZW4KICAgICAgbG9jYWwgaXAKICAgICAgaXA9JChpcGNvbmZpZyBnZXRpZmFkZHIgIiR7cHJpbWFyeX0iIDI+L2Rldi9udWxsIHx8IHRydWUpCiAgICAgIGlmIFtbIC1uICIke2lwfSIgXV07IHRoZW4KICAgICAgICBpcHMrPSgiJHtpcH0iKQogICAgICBmaQogICAgZmkKICBmaQogIGVjaG8gIiR7aXBzW0BdfSIKfQoKd3JpdGVfbGF1bmNoX2FnZW50KCkgewogIGxvZyAiV3JpdGluZyBMYXVuY2hBZ2VudCB0byAke0xBVU5DSF9QTElTVH0iCiAgbG9jYWwgYWxsb3dlZF9zdWJuZXRzX2NzdgogIGFsbG93ZWRfc3VibmV0c19jc3Y9IiQocHJpbnRmICIlcywiICIke0FMTE9XRURfU1VCTkVUU1tAXX0iKSIKICBhbGxvd2VkX3N1Ym5ldHNfY3N2PSIke2FsbG93ZWRfc3VibmV0c19jc3YlLH0iCgogIGxvY2FsIHN0ZG91dF9sb2c9IiR7U0NSSVBUX0RJUn0vb3Blbl9pbl9zYWZhcmlfc2VydmVyLm91dC5sb2ciCiAgbG9jYWwgc3RkZXJyX2xvZz0iJHtTQ1JJUFRfRElSfS9vcGVuX2luX3NhZmFyaV9zZXJ2ZXIuZXJyLmxvZyIKCiAgL3Vzci9iaW4vdGVlICIke0xBVU5DSF9QTElTVH0iID4vZGV2L251bGwgPDxQTElTVAo8P3htbCB2ZXJzaW9uPSIxLjAiIGVuY29kaW5nPSJVVEYtOCI/Pgo8IURPQ1RZUEUgcGxpc3QgUFVCTElDICItLy9BcHBsZS8vRFREIFBMSVNUIDEuMC8vRU4iICJodHRwOi8vd3d3LmFwcGxlLmNvbS9EVERzL1Byb3BlcnR5TGlzdC0xLjAuZHRkIj4KPHBsaXN0IHZlcnNpb249IjEuMCI+CjxkaWN0PgogIDxrZXk+TGFiZWw8L2tleT48c3RyaW5nPiR7TEFVTkNIX05BTUV9PC9zdHJpbmc+CiAgPGtleT5Qcm9ncmFtQXJndW1lbnRzPC9rZXk+CiAgPGFycmF5PgogICAgPHN0cmluZz4ke1BZVEhPTl9CSU59PC9zdHJpbmc+CiAgICA8c3RyaW5nPiR7U0VSVkVSX1BZfTwvc3RyaW5nPgogIDwvYXJyYXk+CiAgPGtleT5SdW5BdExvYWQ8L2tleT48dHJ1ZS8+CiAgPGtleT5LZWVwQWxpdmU8L2tleT48dHJ1ZS8+CiAgPGtleT5TdGFuZGFyZE91dFBhdGg8L2tleT48c3RyaW5nPiR7c3Rkb3V0X2xvZ308L3N0cmluZz4KICA8a2V5PlN0YW5kYXJkRXJyb3JQYXRoPC9rZXk+PHN0cmluZz4ke3N0ZGVycl9sb2d9PC9zdHJpbmc+CiAgPGtleT5FbnZpcm9ubWVudFZhcmlhYmxlczwva2V5PgogIDxkaWN0PgogICAgPGtleT5PSVNfUE9SVDwva2V5PjxzdHJpbmc+JHtQT1JUfTwvc3RyaW5nPgogICAgPGtleT5PSVNfQklORDwva2V5PjxzdHJpbmc+JHtCSU5EX0FERFJFU1N9PC9zdHJpbmc+CiAgICA8a2V5Pk9JU19UT0tFTjwva2V5PjxzdHJpbmc+JHtTSEFSRURfVE9LRU59PC9zdHJpbmc+CiAgICA8a2V5Pk9JU19BTExPV0VEX1NVQk5FVFM8L2tleT48c3RyaW5nPiR7YWxsb3dlZF9zdWJuZXRzX2Nzdn08L3N0cmluZz4KICAgIDxrZXk+T0lTX1ZFUkJPU0U8L2tleT48c3RyaW5nPiR7VkVSQk9TRX08L3N0cmluZz4KICAgIDxrZXk+T0lTX0RSWV9SVU48L2tleT48c3RyaW5nPiR7RFJZX1JVTn08L3N0cmluZz4KICA8L2RpY3Q+CjwvZGljdD4KPC9wbGlzdD4KUExJU1QKfQoKcmVsb2FkX2xhdW5jaF9hZ2VudCgpIHsKICAjIFVubG9hZCBpZiBleGlzdHMsIHRoZW4gbG9hZAogIGlmIGxhdW5jaGN0bCBwcmludCAiZ3VpLyQoaWQgLXUpLyR7TEFVTkNIX05BTUV9IiA+L2Rldi9udWxsIDI+JjE7IHRoZW4KICAgIGxvZyAiVW5sb2FkaW5nIGV4aXN0aW5nIExhdW5jaEFnZW50Li4uIgogICAgcnVuIGxhdW5jaGN0bCBib290b3V0ICJndWkvJChpZCAtdSkvJHtMQVVOQ0hfTkFNRX0iIHx8IHRydWUKICBmaQogIGxvZyAiTG9hZGluZyBMYXVuY2hBZ2VudC4uLiIKICBydW4gbGF1bmNoY3RsIGJvb3RzdHJhcCAiZ3VpLyQoaWQgLXUpIiAiJHtMQVVOQ0hfUExJU1R9IgogIGxvZyAiS2lja3N0YXJ0aW5nLi4uIgogIHJ1biBsYXVuY2hjdGwga2lja3N0YXJ0IC1rICJndWkvJChpZCAtdSkvJHtMQVVOQ0hfTkFNRX0iCn0KCnNob3dfaW5mb19kaWFsb2coKSB7CiAgbG9jYWwgaG9zdF9pcHM9KCIkQCIpCiAgbG9jYWwgaXBzX3RleHQKICBpZiBbWyAkeyNob3N0X2lwc1tAXX0gLWd0IDAgXV07IHRoZW4KICAgIGlwc190ZXh0PSQocHJpbnRmICIqICVzXG4iICIke2hvc3RfaXBzW0BdfSIpCiAgZWxzZQogICAgaXBzX3RleHQ9Iihub25lIGRldGVjdGVkKSIKICBmaQoKICBsb2NhbCBtc2c9Ik9wZW4gaW4gU2FmYXJpIGhlbHBlciBpcyBydW5uaW5nLgoKRGV0ZWN0ZWQgTWFjIGhvc3QgSVAocykgZm9yIFBhcmFsbGVsczoKJHtpcHNfdGV4dH0KCkNvbmZpZ3VyZSB0aGUgRWRnZSBleHRlbnNpb24gT3B0aW9uczoKLSBIb3N0OiBvbmUgb2YgdGhlIElQcyBhYm92ZSAoY29tbW9ubHkgMTAuMjExLjU1LjIpCi0gUG9ydDogJHtQT1JUfQotIFRva2VuOiAke1NIQVJFRF9UT0tFTn0KClRoZW4gY2xpY2sgdGhlIHRvb2xiYXIgYnV0dG9uIG9yIHVzZSBBbHQrU2hpZnQrUy4iCiAgL3Vzci9iaW4vb3Nhc2NyaXB0IDw8T1NBCmRpc3BsYXkgZGlhbG9nICIke21zZ30iIHdpdGggdGl0bGUgIk9wZW4gaW4gU2FmYXJpIChNYWMgaGVscGVyKSIgYnV0dG9ucyB7Ik9LIn0gZGVmYXVsdCBidXR0b24gIk9LIgpPU0EKfQoKbWFpbigpIHsKICBlbnN1cmVfcHl0aG9uCgogIGlmIFtbICEgLWYgIiR7U0VSVkVSX1BZfSIgXV07IHRoZW4KICAgIGVjaG8gIlNlcnZlciBzY3JpcHQgbm90IGZvdW5kIGF0ICR7U0VSVkVSX1BZfSIgPiYyCiAgICBleGl0IDEKICBmaQoKICBta2RpciAtcCAiJHtIT01FfS9MaWJyYXJ5L0xhdW5jaEFnZW50cyIKCiAgaWYgW1sgIiR7SU5TVEFMTF9MQVVOQ0hfQUdFTlR9IiA9PSAidHJ1ZSIgXV07IHRoZW4KICAgIHdyaXRlX2xhdW5jaF9hZ2VudAogICAgcmVsb2FkX2xhdW5jaF9hZ2VudAogIGVsc2UKICAgIGxvZyAiSU5TVEFMTF9MQVVOQ0hfQUdFTlQ9ZmFsc2U7IHN0YXJ0aW5nIHNlcnZlciBpbiBmb3JlZ3JvdW5kLi4uIgogICAgaWYgW1sgIiR7RFJZX1JVTn0iID09ICJ0cnVlIiBdXTsgdGhlbgogICAgICBsb2cgIltEUllfUlVOXSBXb3VsZCBydW46ICR7UFlUSE9OX0JJTn0gJHtTRVJWRVJfUFl9IgogICAgZWxzZQogICAgICAiJHtQWVRIT05fQklOfSIgIiR7U0VSVkVSX1BZfSIgJgogICAgICBkaXNvd24KICAgIGZpCiAgZmkKCiAgbG9jYWwgaXBzCiAgaXBzPSgkKGRldGVjdF92bmljX2lwcykpCiAgc2hvd19pbmZvX2RpYWxvZyAiJHtpcHNbQF19Igp9CgptYWluICIkQCI",
+					"AQAAAAAAAAABAAAAAAAAAAAAAAB6FQAAAAAAAAAAAAAAAPC/"
+				]
+			]
+		},
+		{
+			"file": "extension/manifest.json",
+			"settings":
+			{
+				"buffer_size": 969,
+				"encoding": "UTF-8",
+				"line_ending": "Unix"
+			},
+			"undo_stack":
+			[
+				[
+					4,
+					1,
+					"paste",
+					null,
+					"AQAAAAAAAAAAAAAAyQMAAAAAAACgAgAAewogICJtYW5pZmVzdF92ZXJzaW9uIjogMywKICAibmFtZSI6ICJPcGVuIGluIFNhZmFyaSAoTWFjIHZpYSBQYXJhbGxlbHMpIiwKICAidmVyc2lvbiI6ICIxLjAuMCIsCiAgImRlc2NyaXB0aW9uIjogIk9wZW5zIHRoZSBjdXJyZW50IEVkZ2UgcGFnZSBpbiBTYWZhcmkgb24geW91ciBNYWMgd2hlbiBydW5uaW5nIFdpbmRvd3MgaW4gUGFyYWxsZWxzLiIsCiAgInBlcm1pc3Npb25zIjogWwogICAgInRhYnMiLAogICAgInN0b3JhZ2UiLAogICAgImNvbnRleHRNZW51cyIsCiAgICAibm90aWZpY2F0aW9ucyIKICBdLAogICJob3N0X3Blcm1pc3Npb25zIjogWwogICAgIjxhbGxfdXJscz4iCiAgXSwKICAiYmFja2dyb3VuZCI6IHsKICAgICJzZXJ2aWNlX3dvcmtlciI6ICJiYWNrZ3JvdW5kLmpzIgogIH0sCiAgImFjdGlvbiI6IHsKICAgICJkZWZhdWx0X3RpdGxlIjogIk9wZW4gaW4gU2FmYXJpIChNYWMpIgogIH0sCiAgIm9wdGlvbnNfcGFnZSI6ICJvcHRpb25zLmh0bWwiLAogICJjb21tYW5kcyI6IHsKICAgICJvcGVuLWluLXNhZmFyaSI6IHsKICAgICAgInN1Z2dlc3RlZF9rZXkiOiB7CiAgICAgICAgImRlZmF1bHQiOiAiQWx0K1NoaWZ0K1MiCiAgICAgIH0sCiAgICAgICJkZXNjcmlwdGlvbiI6ICJPcGVuIGN1cnJlbnQgdGFiIGluIFNhZmFyaSBvbiBNYWMiCiAgICB9CiAgfQp9",
+					"AQAAAAAAAAABAAAAAAAAAAAAAACgAgAAAAAAAAAAAAAAAPC/"
+				],
+				[
+					12,
+					1,
+					"paste",
+					null,
+					"AQAAAAAAAAAAAAAAyQMAAAAAAADJAwAAewogICJtYW5pZmVzdF92ZXJzaW9uIjogMywKICAibmFtZSI6ICJPcGVuIGluIFNhZmFyaSAoTWFjIHZpYSBQYXJhbGxlbHMpIiwKICAidmVyc2lvbiI6ICIxLjIuMCIsCiAgImRlc2NyaXB0aW9uIjogIk9wZW5zIHRoZSBjdXJyZW50IEVkZ2UgcGFnZSBpbiBTYWZhcmkgb24geW91ciBNYWMgd2hlbiBydW5uaW5nIFdpbmRvd3MgaW4gUGFyYWxsZWxzLiIsCiAgInBlcm1pc3Npb25zIjogWwogICAgInRhYnMiLAogICAgInN0b3JhZ2UiLAogICAgImNvbnRleHRNZW51cyIsCiAgICAibm90aWZpY2F0aW9ucyIKICBdLAogICJob3N0X3Blcm1pc3Npb25zIjogWwogICAgIjxhbGxfdXJscz4iCiAgXSwKICAiYmFja2dyb3VuZCI6IHsKICAgICJzZXJ2aWNlX3dvcmtlciI6ICJiYWNrZ3JvdW5kLmpzIgogIH0sCiAgImljb25zIjogewogICAgIjE2IjogImljb25zL2ljb24xNi5wbmciLAogICAgIjMyIjogImljb25zL2ljb24zMi5wbmciLAogICAgIjQ4IjogImljb25zL2ljb240OC5wbmciLAogICAgIjEyOCI6ICJpY29ucy9pY29uMTI4LnBuZyIKICB9LAogICJhY3Rpb24iOiB7CiAgICAiZGVmYXVsdF90aXRsZSI6ICJPcGVuIGluIFNhZmFyaSAoTWFjKSIsCiAgICAiZGVmYXVsdF9pY29uIjogewogICAgICAiMTYiOiAiaWNvbnMvaWNvbjE2LnBuZyIsCiAgICAgICIzMiI6ICJpY29ucy9pY29uMzIucG5nIiwKICAgICAgIjQ4IjogImljb25zL2ljb240OC5wbmciLAogICAgICAiMTI4IjogImljb25zL2ljb24xMjgucG5nIgogICAgfQogIH0sCiAgIm9wdGlvbnNfcGFnZSI6ICJvcHRpb25zLmh0bWwiLAogICJjb21tYW5kcyI6IHsKICAgICJvcGVuLWluLXNhZmFyaSI6IHsKICAgICAgInN1Z2dlc3RlZF9rZXkiOiB7CiAgICAgICAgImRlZmF1bHQiOiAiQWx0K1NoaWZ0K1MiCiAgICAgIH0sCiAgICAgICJkZXNjcmlwdGlvbiI6ICJPcGVuIGN1cnJlbnQgdGFiIGluIFNhZmFyaSBvbiBNYWMiCiAgICB9CiAgfQp9",
+					"AQAAAAAAAAABAAAAAAAAAAAAAADJAwAAAAAAAAAAAAAAAPC/"
+				]
+			]
+		},
+		{
+			"file": "CHANGELOG.md",
+			"settings":
+			{
+				"buffer_size": 907,
+				"encoding": "UTF-8",
+				"line_ending": "Unix"
+			},
+			"undo_stack":
+			[
+				[
+					4,
+					1,
+					"paste",
+					null,
+					"AQAAAAAAAAAAAAAAiwMAAAAAAABTAQAAIyBDaGFuZ2Vsb2cKCkFsbCBub3RhYmxlIGNoYW5nZXMgdG8gdGhpcyBwcm9qZWN0IHdpbGwgYmUgZG9jdW1lbnRlZCBpbiB0aGlzIGZpbGUsIGZvbGxvd2luZyBTZW1WZXIuCgojIyBbMS4wLjBdIC0gMjAyNS0wOC0xNgojIyMgQWRkZWQKLSBJbml0aWFsIHJlbGVhc2Ugd2l0aDoKICAtIG1hY09TIHpzaCBvcmNoZXN0cmF0b3IgYW5kIFB5dGhvbiAzIHNlcnZlcgogIC0gTGF1bmNoQWdlbnQgdGVtcGxhdGUKICAtIEVkZ2UgKENocm9taXVtKSBNYW5pZmVzdCBWMyBleHRlbnNpb24gd2l0aCB0b29sYmFyIGJ1dHRvbiwgY29udGV4dCBtZW51cywgb3B0aW9ucywgYW5kIGtleWJvYXJkIHNob3J0Y3V0",
+					"AQAAAAAAAAABAAAAAAAAAAAAAABTAQAAAAAAAAAAAAAAAPC/"
+				]
+			]
+		},
+		{
+			"file": "README.md",
+			"settings":
+			{
+				"buffer_size": 4716,
+				"encoding": "UTF-8",
+				"line_ending": "Unix"
+			},
+			"undo_stack":
+			[
+				[
+					4,
+					1,
+					"paste",
+					null,
+					"AQAAAAAAAAAAAAAAbBIAAAAAAAB+DwAAIyBPcGVuIGluIFNhZmFyaSAoRWRnZSDihpIgTWFjIHZpYSBQYXJhbGxlbHMpCgpPcGVuIHRoZSBjdXJyZW50IE1pY3Jvc29mdCBFZGdlIHRhYiAocnVubmluZyBpbiBXaW5kb3dzIGluc2lkZSBQYXJhbGxlbHMpIGRpcmVjdGx5IGluIFNhZmFyaSBvbiB5b3VyIE1hYy4KClRoaXMgcmVwbyBwcm92aWRlczoKLSBBIG1hY09TIGhlbHBlciAoenNoIG9yY2hlc3RyYXRvciArIFB5dGhvbiAzIHNlcnZlcikgdGhhdCBzYWZlbHkgYWNjZXB0cyBvcGVuLVVSTCByZXF1ZXN0cyBhbmQgbGF1bmNoZXMgU2FmYXJpLgotIEEgTWljcm9zb2Z0IEVkZ2UgZXh0ZW5zaW9uIHRoYXQgc2VuZHMgdGhlIGN1cnJlbnQgcGFnZSBVUkwgdG8gdGhlIE1hYyBoZWxwZXIuCgpUZXN0ZWQgYXNzdW1wdGlvbnM6Ci0gbWFjT1M6IEFwcGxlIFNpbGljb24gKE1vbnRlcmV5IDEyKyByZWNvbW1lbmRlZCksIFB5dGhvbiAzIGF2YWlsYWJsZSBhdCAvdXNyL2Jpbi9weXRob24zLgotIFBhcmFsbGVscyBEZXNrdG9wIHdpdGggUGFyYWxsZWxzIFRvb2xzIGluc3RhbGxlZDsgV2luZG93cyBndWVzdCBjYW4gcmVhY2ggdGhlIE1hYyBob3N0IElQIG9uIHRoZSBQYXJhbGxlbHMgdmlydHVhbCBuZXR3b3JrIChlLmcuLCAxMC4yMTEuNTUuMikuCi0gTWljcm9zb2Z0IEVkZ2UgKENocm9taXVtLWJhc2VkKSBvbiBXaW5kb3dzLgoKU2VjdXJpdHk6Ci0gVGhlIG1hY09TIGhlbHBlciBiaW5kcyB0byB5b3VyIE1hYyBvbmx5IGFuZCB2YWxpZGF0ZXM6CiAgLSBTb3VyY2UgSVAgaXMgaW4gYWxsb3dlZCBQYXJhbGxlbHMgc3VibmV0cyAoZGVmYXVsdCAxMC4yMTEuNTUuMC8yNCwgMTAuMzcuMTI5LjAvMjQpLgogIC0gQSBzaGFyZWQgdG9rZW4gbXVzdCBtYXRjaCAoY29uZmlndXJhYmxlKS4KLSBDT1JTIGhlYWRlcnMgYXJlIGVuYWJsZWQgZm9yIHRoZSBFZGdlIGV4dGVuc2lvbiB0byBjYWxsIHRoZSBoZWxwZXIuCgpRdWljayBzdGFydAoKMSkgT24geW91ciBNYWMgKGhvc3QpOgotIERvdWJsZS1jbGljayBtYWMvb3Blbl9pbl9zYWZhcmkuY29tbWFuZAotIEl0IHdpbGw6CiAgLSBTdGFydCB0aGUgUHl0aG9uIHNlcnZlcgogIC0gSW5zdGFsbCBhIExhdW5jaEFnZW50IHRvIHJ1biB0aGUgc2VydmVyIGF0IGxvZ2luCiAgLSBTaG93IGEgZGlhbG9nIHdpdGggdGhlIGRldGVjdGVkIE1hYyBob3N0IElQKHMpLCBwb3J0LCBhbmQgdG9rZW4KCjIpIEluIFdpbmRvd3MgKGd1ZXN0KSwgaW5zdGFsbCB0aGUgRWRnZSBleHRlbnNpb246Ci0gRWRnZSDihpIgRXh0ZW5zaW9ucyDihpIgTWFuYWdlIEV4dGVuc2lvbnMg4oaSIERldmVsb3BlciBtb2RlOiBPbgotIExvYWQgdW5wYWNrZWQg4oaSIHNlbGVjdCB0aGUgZXh0ZW5zaW9uLyBmb2xkZXIgaW4gdGhpcyByZXBvCgozKSBDb25maWd1cmUgdGhlIGV4dGVuc2lvbjoKLSBPcGVuIHRoZSBleHRlbnNpb27igJlzIE9wdGlvbnMgcGFnZQotIFNldCB0aGUgSG9zdCBJUCB0byB0aGUgb25lIHNob3duIGJ5IHRoZSBtYWMgc2NyaXB0IGRpYWxvZyAoZS5nLiwgMTAuMjExLjU1LjIpCi0gUG9ydCBzaG91bGQgbWF0Y2ggKGRlZmF1bHQgNTE4ODgpCi0gVG9rZW4gc2hvdWxkIG1hdGNoCi0gQ2xpY2sg4oCcVGVzdCBDb25uZWN0aW9u4oCdIChzaG91bGQgc3VjY2VlZCkKCjQpIFVzZSBpdDoKLSBDbGljayB0aGUgdG9vbGJhciBidXR0b24g4oCcT3BlbiBpbiBTYWZhcmkgKE1hYynigJ0sIG9yCi0gUmlnaHQtY2xpY2sgYSBwYWdlL2xpbmsvaW1hZ2UgYW5kIGNob29zZSDigJxPcGVuIGluIFNhZmFyaSAoTWFjKeKAnSwgb3IKLSBVc2UgdGhlIHNob3J0Y3V0IEFsdCtTaGlmdCtTCgpGaWxlcwoKLSBtYWMvb3Blbl9pbl9zYWZhcmkuY29tbWFuZAogIC0gRG91YmxlLWNsaWNrIHRvIGluc3RhbGwvc3RhcnQgdGhlIG1hY09TIGhlbHBlciBhbmQgTGF1bmNoQWdlbnQuCi0gbWFjL29wZW5faW5fc2FmYXJpX3NlcnZlci5weQogIC0gUHl0aG9uIDMgSFRUUCBzZXJ2ZXIgdGhhdCByZWNlaXZlcyByZXF1ZXN0cyBhbmQgb3BlbnMgU2FmYXJpLgotIG1hYy9sYXVuY2gvY29tLnBob2JybGEub3Blbi1pbi1zYWZhcmkucGxpc3QKICAtIExhdW5jaEFnZW50IHRlbXBsYXRlICh0aGUgLmNvbW1hbmQgc2NyaXB0IGluc3RhbGxzIGEgcmVzb2x2ZWQgY29weSB0byB+L0xpYnJhcnkvTGF1bmNoQWdlbnRzKS4KLSBleHRlbnNpb24vCiAgLSBtYW5pZmVzdC5qc29uOiBFZGdlIGV4dGVuc2lvbiBtYW5pZmVzdCAoTVYzKQogIC0gYmFja2dyb3VuZC5qczogU2VydmljZSB3b3JrZXIgKGJ1dHRvbiwgY29udGV4dCBtZW51cywgbWVzc2FnaW5nKQogIC0gb3B0aW9ucy5odG1sLy5qcy8uY3NzOiBPcHRpb25zIFVJIHRvIHNldCBob3N0LCBwb3J0LCB0b2tlbiwgSFRUUFMKCkNvbmZpZ3VyYXRpb24KCi0gbWFjL29wZW5faW5fc2FmYXJpLmNvbW1hbmQgaGFzIGEgQ09ORklHIHNlY3Rpb24gYXQgdG9wOgogIC0gUE9SVCwgQklORF9BRERSRVNTLCBBTExPV0VEX1NVQk5FVFMsIFNIQVJFRF9UT0tFTiwgSU5TVEFMTF9MQVVOQ0hfQUdFTlQsIERSWV9SVU4sIFZFUkJPU0UKLSBtYWMvb3Blbl9pbl9zYWZhcmlfc2VydmVyLnB5IGhhcyBpdHMgb3duIENPTkZJRyB3aXRoIGVudmlyb25tZW50IG92ZXJyaWRlczoKICAtIEVudmlyb25tZW50IHZhcnMgc2V0IGJ5IHRoZSBMYXVuY2hBZ2VudCAoT0lTX1BPUlQsIE9JU19CSU5ELCBPSVNfVE9LRU4sIE9JU19BTExPV0VEX1NVQk5FVFMpIG92ZXJyaWRlIHRoZSBQeXRob24gZGVmYXVsdHMuCi0gZXh0ZW5zaW9uL29wdGlvbnMgcGFnZSBzdG9yZXMgc2V0dGluZ3MgaW4gY2hyb21lLnN0b3JhZ2Uuc3luYyB3aXRoIGRlZmF1bHRzOgogIC0gSG9zdDogMTAuMjExLjU1LjIKICAtIFBvcnQ6IDUxODg4CiAgLSBUb2tlbjogY2hhbmdlbWUxMjM0NTYKICAtIEhUVFBTOiBvZmYKCk5vdGVzCgotIEhvc3QgSVAgaW4gUGFyYWxsZWxzOgogIC0gQ29tbW9uIGRlZmF1bHRzIGFyZSAxMC4yMTEuNTUuMiBvciAxMC4zNy4xMjkuMiBvbiB2bmljMC92bmljMS4gVGhlIE1hYyBzY3JpcHQgZGV0ZWN0cyBhbmQgbGlzdHMgdGhlc2UgZm9yIHlvdS4KLSBGaXJld2FsbDoKICAtIFRoZSBoZWxwZXIgbGlzdGVucyBvbiB0aGUgTWFjOyBvdXRib3VuZCBmcm9tIFdpbmRvd3MgKGd1ZXN0KSB0eXBpY2FsbHkgc3VjY2VlZHMgYnkgZGVmYXVsdC4KICAtIElmIHlvdSB1c2UgdGhpcmQtcGFydHkgZmlyZXdhbGwgc29mdHdhcmUgb24gbWFjT1MsIGFsbG93IGluYm91bmQgVENQIHRvIHRoZSBjaG9zZW4gcG9ydC4KLSBFbGV2YXRlZCBwcml2aWxlZ2VzOgogIC0gTm90IHJlcXVpcmVkLiBMYXVuY2hBZ2VudCBydW5zIGluIHlvdXIgdXNlciBjb250ZXh0LgoKVW5pbnN0YWxsCgotIG1hYzogRG91YmxlLWNsaWNrIHRoZSAuY29tbWFuZCBzY3JpcHQgYWdhaW47IGNob29zZSB0byByZW1vdmUgdGhlIExhdW5jaEFnZW50LCBvciBtYW51YWxseToKICAtIGxhdW5jaGN0bCBib290b3V0IGd1aS8kVUlEIH4vTGlicmFyeS9MYXVuY2hBZ2VudHMvY29tLnBob2JybGEub3Blbi1pbi1zYWZhcmkucGxpc3QKICAtIFJlbW92ZSB0aGUgcGxpc3QgZmlsZQotIFdpbmRvd3M6IFJlbW92ZSB0aGUgZXh0ZW5zaW9uIGluIEVkZ2UuCgpSZWZlcmVuY2VzCgotIFB5dGhvbiBodHRwLnNlcnZlcjogaHR0cHM6Ly9kb2NzLnB5dGhvbi5vcmcvMy9saWJyYXJ5L2h0dHAuc2VydmVyLmh0bWwKLSBQeXRob24gaXBhZGRyZXNzOiBodHRwczovL2RvY3MucHl0aG9uLm9yZy8zL2xpYnJhcnkvaXBhZGRyZXNzLmh0bWwKLSBtYWNPUyBvcGVuIGNvbW1hbmQ6IGh0dHBzOi8vc3M2NC5jb20vb3N4L29wZW4uaHRtbAotIExhdW5jaEFnZW50czogaHR0cHM6Ly93d3cubGF1bmNoZC5pbmZvCi0gRWRnZS9DaHJvbWUgRXh0ZW5zaW9ucyAoTWFuaWZlc3QgVjMpOgogIC0gaHR0cHM6Ly9kZXZlbG9wZXIuY2hyb21lLmNvbS9kb2NzL2V4dGVuc2lvbnMvbXYzLwogIC0gaHR0cHM6Ly9sZWFybi5taWNyb3NvZnQuY29tL21pY3Jvc29mdC1lZGdlL2V4dGVuc2lvbnMtY2hyb21pdW0v",
+					"AQAAAAAAAAABAAAAAAAAAAAAAABmDwAAAAAAAAAAAAAAAPC/"
+				]
+			]
+		},
+		{
+			"file": "REPO.md",
+			"settings":
+			{
+				"buffer_size": 441,
+				"line_ending": "Unix"
+			},
+			"undo_stack":
+			[
+			]
+		}
+	],
+	"build_system": "",
+	"build_system_choices":
+	[
+		[
+			[
+				[
+					"Packages/Python/Python.sublime-build",
+					""
+				],
+				[
+					"Packages/Python/Python.sublime-build",
+					"Syntax Check"
+				]
+			],
+			[
+				"Packages/Python/Python.sublime-build",
+				""
+			]
+		],
+		[
+			[
+				[
+					"Packages/Python/Python.sublime-build",
+					""
+				],
+				[
+					"Packages/Python/Python.sublime-build",
+					"Syntax Check"
+				],
+				[
+					"Packages/Virtualenv/Python + Virtualenv.sublime-build",
+					""
+				]
+			],
+			[
+				"Packages/Virtualenv/Python + Virtualenv.sublime-build",
+				""
+			]
+		],
+		[
+			[
+				[
+					"Packages/User/Run Shell Script (chmod + run).sublime-build",
+					""
+				],
+				[
+					"Packages/User/Run Shell Script (chmod + run).sublime-build",
+					"Run current file"
+				],
+				[
+					"Packages/User/Run Shell Script (chmod + run).sublime-build",
+					"Run build_pyinstaller.sh (project root)"
+				],
+				[
+					"Packages/User/Run Shell Script (chmod + run).sublime-build",
+					"Run current file with args (edit ARGS below)"
+				]
+			],
+			[
+				"Packages/User/Run Shell Script (chmod + run).sublime-build",
+				"Run build_pyinstaller.sh (project root)"
+			]
+		]
+	],
+	"build_varint": "",
+	"command_palette":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+			[
+				"pack",
+				"Package Control: Install Package"
+			],
+			[
+				"Install Package Control",
+				"Package Control: Install Package"
+			]
+		],
+		"width": 0.0
+	},
+	"console":
+	{
+		"height": 130.0,
+		"history":
+		[
+		]
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"expanded_folders":
+	[
+		"/Users/phobrla/Documents/GitHub/edge-open-in-safari",
+		"/Users/phobrla/Documents/GitHub/edge-open-in-safari/extension",
+		"/Users/phobrla/Documents/GitHub/edge-open-in-safari/mac"
+	],
+	"file_history":
+	[
+		"/Users/phobrla/Documents/GitHub/edge-open-in-safari/README.md",
+		"/Users/phobrla/Library/Mobile Documents/com~apple~CloudDocs/Downloads/Job Sites  Recruiters  Resources/Job Sites  Recruiters  Resources.md",
+		"/Users/phobrla/Documents/GitHub/apple_passwords_tools/apple_passwords_audit.command",
+		"/Users/phobrla/Documents/GitHub/apple_passwords_tools/python quit unexpectedly.txt",
+		"/Users/phobrla/Documents/GitHub/apple_passwords_tools/README.md",
+		"/Users/phobrla/Documents/GitHub/apple_passwords_tools/apple_passwords_audit.py",
+		"/Users/phobrla/Documents/GitHub/apple_passwords_tools/apple_passwords_username_space_scan.py",
+		"/Users/phobrla/Documents/GitHub/apple_passwords_tools/apple_passwords_username_space_scan.command",
+		"/Users/phobrla/Documents/GitHub/resume_matcher_gui/synonyms.json",
+		"/Users/phobrla/Documents/GitHub/resume_matcher_gui/ignored_phrases.json",
+		"/Users/phobrla/Documents/GitHub/resume_matcher_gui/ignored_locations.json",
+		"/Users/phobrla/Documents/GitHub/resume_matcher_gui/EXAMPLES.md",
+		"/Users/phobrla/Documents/GitHub/resume_matcher_gui/line_cleaning.json",
+		"/Users/phobrla/Documents/GitHub/resume_matcher_gui/resume_matcher_gui.py",
+		"/Users/phobrla/Documents/GitHub/apple_passwords_username_space_scan/apple_passwords_username_space_scan.py",
+		"/Users/phobrla/Documents/GitHub/apple_passwords_username_space_scan/apple_passwords_username_space_scan.command",
+		"/Users/phobrla/Library/Mobile Documents/com~apple~CloudDocs/Downloads/ob Application Workflowmd",
+		"/Users/phobrla/Documents/GitHub/resume_matcher_gui/docx_styled_text_helper.py",
+		"/Users/phobrla/Documents/GitHub/resume_matcher_gui/ignore_list.json",
+		"/Users/phobrla/Documents/GitHub/resume_matcher_gui/build_jar.command",
+		"/Users/phobrla/Documents/GitHub/resume_matcher_gui/build_pyinstaller.sh",
+		"/Users/phobrla/Documents/GitHub/generate_pip_install_from_imports/generate_pip_install_from_imports.py",
+		"/Users/phobrla/Documents/_Career/Application Materials/_Years/2025/Ohio Department of Mental Health and Addiction Services/Comtech Global Inc/Certified Epic HIM Analyst - August 2025/generate_pip_install_from_imports.py",
+		"/Users/phobrla/Library/Mobile Documents/com~apple~CloudDocs/Downloads/fix_sublime_virtualenv_plugin.py",
+		"/Users/phobrla/Library/Mobile Documents/com~apple~CloudDocs/Downloads/setup_mac_python_tk_env_Version2.sh",
+		"/Users/phobrla/Documents/GitHub/virtualenvwrapper/virtualenvwrapper.sh",
+		"/Users/phobrla/Documents/GitHub/build_mac_app/build_mac_app.sh",
+		"/Users/phobrla/Documents/GitHub/indeed-epic-miner/indeed_job_miner.py",
+		"/Users/phobrla/Documents/GitHub/indeed-epic-miner/miner/exporter.py",
+		"/Users/phobrla/Documents/GitHub/indeed-epic-miner/miner/intervention.py",
+		"/Users/phobrla/Documents/GitHub/indeed-epic-miner/miner/ats.py",
+		"/Users/phobrla/Documents/GitHub/indeed-epic-miner/miner/parsers.py",
+		"/Users/phobrla/Documents/GitHub/indeed-epic-miner/miner/network.py",
+		"/Users/phobrla/Documents/GitHub/indeed-epic-miner/miner/db.py",
+		"/Users/phobrla/Documents/GitHub/indeed-epic-miner/miner/core.py",
+		"/Users/phobrla/Documents/GitHub/indeed-epic-miner/miner/__init__.py",
+		"/Users/phobrla/Documents/GitHub/indeed-epic-miner/company_fill_status.py",
+		"/Users/phobrla/Documents/GitHub/indeed-epic-miner/README.md",
+		"/Users/phobrla/Documents/GitHub/indeed-epic-miner/webharvy-configuration.xml",
+		"/Users/phobrla/Documents/GitHub/indeed-epic-miner/input.json",
+		"/Users/phobrla/Documents/GitHub/indeed-epic-miner/desired-output.json",
+		"/Users/phobrla/Documents/GitHub/epic-featured-applications/organize_featured_screenshots.py",
+		"/Users/phobrla/Documents/GitHub/spotlight_mdimport_progress/spotlight_mdimport_progress.py",
+		"/Users/phobrla/Documents/GitHub/fpdf_pdf_to_word_converter/fpdf_pdf_to_word_converter.py",
+		"/Users/phobrla/Documents/GitHub/career-agent/prompts/canonical_competency_prompt_v_23.md",
+		"/Users/phobrla/Documents/GitHub/epic-resume-fix/fix_docx_splits.py",
+		"/Users/phobrla/Documents/GitHub/career-agent/fix_docx_splits.py",
+		"/Users/phobrla/Documents/GitHub/career-agent/populate_docx_resume_from_json.py",
+		"/Users/phobrla/Documents/GitHub/career-agent/output.json",
+		"/Users/phobrla/Documents/GitHub/career-agent/generate_json_from_spreadsheet.py",
+		"/Users/phobrla/Documents/GitHub/career-agent/resume-creation-prompt.md",
+		"/Users/phobrla/Documents/GitHub/career-agent/generate_epic_resume.py",
+		"/Users/phobrla/Documents/GitHub/career-agent/prompts/Using the resources at hand, make me a general Epi",
+		"/Users/phobrla/Documents/GitHub/career-agent/generate_json_from_spreadsheet_20250804_075004.log",
+		"/Users/phobrla/Documents/GitHub/career-agent/docx_nodes_to_spreadsheet.py",
+		"/Users/phobrla/Documents/GitHub/career-agent/generate_json_from_spreadsheet_20250804_074550.log",
+		"/Users/phobrla/Library/Mobile Documents/com~apple~CloudDocs/Downloads/semantic_job_analysis_batch10_results.json",
+		"/Users/phobrla/Library/Mobile Documents/com~apple~CloudDocs/Downloads/semantic_job_analysis_batch11_results.json",
+		"/Users/phobrla/Documents/GitHub/carilion_role_analysis/generate_epic_modules_mapping.py",
+		"/Users/phobrla/Documents/GitHub/outlook_oab_to_xlsx/outlook_oab_to_xlsx.py",
+		"/Users/phobrla/Library/Mobile Documents/com~apple~CloudDocs/Downloads/Semantic Job Posting Analyzer Prompt.md",
+		"/Users/phobrla/Documents/GitHub/carilion_role_analysis/carilion_role_analysis.py",
+		"/Users/phobrla/Library/Mobile Documents/com~apple~CloudDocs/Downloads/semantic_job_analysis_batch9_results.json",
+		"/Users/phobrla/Library/Mobile Documents/com~apple~CloudDocs/Downloads/semantic_job_analysis_batch8_results.json",
+		"/Users/phobrla/Library/Mobile Documents/com~apple~CloudDocs/Downloads/semantic_job_analysis_batch7_results.json",
+		"/Users/phobrla/Library/Mobile Documents/com~apple~CloudDocs/Downloads/semantic_job_analysis_batch6_results.json",
+		"/Users/phobrla/Library/Mobile Documents/com~apple~CloudDocs/Downloads/semantic_job_analysis_batch5_results.json",
+		"/Users/phobrla/Documents/GitHub/split_json_file/split_json_file.py",
+		"/Users/phobrla/Library/Mobile Documents/com~apple~CloudDocs/Downloads/competency maps/canonical_competency_prompt_v_23.md",
+		"/Users/phobrla/Library/Mobile Documents/com~apple~CloudDocs/Downloads/competency maps/canonical_competencies_macros_v003_prompt.md",
+		"/Users/phobrla/Library/Mobile Documents/com~apple~CloudDocs/Downloads/competency maps/canonical_competencies_macros_v002.json",
+		"/Users/phobrla/Library/Mobile Documents/com~apple~CloudDocs/Downloads/competency maps/canonical_competencies_prompt.md",
+		"/Users/phobrla/Library/Mobile Documents/com~apple~CloudDocs/Downloads/competency maps/tier1_resume_macro_prompt.md",
+		"/Users/phobrla/Library/Mobile Documents/com~apple~CloudDocs/Downloads/competency maps/canonical_competencies_macros_v001.json",
+		"/Users/phobrla/Library/Mobile Documents/com~apple~CloudDocs/Downloads/competency maps/canonical_macro_prompt_template.md",
+		"/Users/phobrla/Library/Mobile Documents/com~apple~CloudDocs/Downloads/competency maps/canonical_macro_prompt_v002.md",
+		"/Users/phobrla/Library/Mobile Documents/com~apple~CloudDocs/Downloads/precursor_macros_in_active_use.json",
+		"/Users/phobrla/Library/Mobile Documents/com~apple~CloudDocs/Downloads/split_macros_batches.py",
+		"/Users/phobrla/Library/Mobile Documents/com~apple~CloudDocs/Downloads/competency maps/resume_prompt_rewrite.md",
+		"/Users/phobrla/Library/Mobile Documents/com~apple~CloudDocs/Downloads/competency maps/canonical_macro_prompt_v2.md",
+		"/Users/phobrla/Library/Mobile Documents/com~apple~CloudDocs/Downloads/competency maps/canonical_competency_generation_prompt.md",
+		"/Users/phobrla/Library/Mobile Documents/com~apple~CloudDocs/Downloads/competency maps/canonical_competency_prompt_macros.md",
+		"/Users/phobrla/Library/Mobile Documents/com~apple~CloudDocs/Downloads/competency maps/canonical_competency_carilion_batch_001_50.json",
+		"/Users/phobrla/Library/Mobile Documents/com~apple~CloudDocs/Downloads/competency maps/canonical_competency_carilion_batch_001.json",
+		"/Users/phobrla/Library/Mobile Documents/com~apple~CloudDocs/Downloads/competency maps/canonical_competencies_batch1.json",
+		"/Users/phobrla/Library/Mobile Documents/com~apple~CloudDocs/Downloads/competency maps/canonical_competencies_macros_v001 2.json",
+		"/Users/phobrla/Library/Mobile Documents/com~apple~CloudDocs/Downloads/competency maps/canonical_competencies_carilion_batch_1_50.json",
+		"/Users/phobrla/Library/Mobile Documents/com~apple~CloudDocs/Downloads/competency maps/canonical_competencies_carilion_v45.json",
+		"/Users/phobrla/Library/Mobile Documents/com~apple~CloudDocs/Downloads/competency maps/canonical_competencies_carilion_v43.json",
+		"/Users/phobrla/Library/Mobile Documents/com~apple~CloudDocs/Downloads/competency maps/canonical_competencies_carilion_v42.json",
+		"/Users/phobrla/Library/Mobile Documents/com~apple~CloudDocs/Downloads/competency maps/canonical_competencies_carilion_v41.json",
+		"/Users/phobrla/Library/Mobile Documents/com~apple~CloudDocs/Downloads/competency maps/canonical_competencies_carilion_v39.json",
+		"/Users/phobrla/Library/Mobile Documents/com~apple~CloudDocs/Downloads/competency maps/canonical_competencies_carilion_v37.json",
+		"/Users/phobrla/Library/Mobile Documents/com~apple~CloudDocs/Downloads/competency maps/canonical_competencies_carilion_v38.json",
+		"/Users/phobrla/Library/Mobile Documents/com~apple~CloudDocs/Downloads/competency maps/canonical_competencies_carilion_v36.json",
+		"/Users/phobrla/Library/Mobile Documents/com~apple~CloudDocs/Downloads/competency maps/canonical_competencies_carilion_v35.json",
+		"/Users/phobrla/Library/Mobile Documents/com~apple~CloudDocs/Downloads/competency maps/canonical_competencies_carilion_v31.json",
+		"/Users/phobrla/Library/Mobile Documents/com~apple~CloudDocs/Downloads/competency maps/canonical_competencies_carilion_v32.json",
+		"/Users/phobrla/Library/Mobile Documents/com~apple~CloudDocs/Downloads/competency maps/canonical_competencies_carilion_v33.json",
+		"/Users/phobrla/Library/Mobile Documents/com~apple~CloudDocs/Downloads/competency maps/canonical_competencies_carilion_v34.json",
+		"/Users/phobrla/Library/Mobile Documents/com~apple~CloudDocs/Downloads/competency maps/canonical_competencies_carilion_v28.json",
+		"/Users/phobrla/Library/Mobile Documents/com~apple~CloudDocs/Downloads/competency maps/canonical_competencies_carilion_v27.json",
+		"/Users/phobrla/Library/Mobile Documents/com~apple~CloudDocs/Downloads/competency maps/canonical_competencies_carilion_v26.json",
+		"/Users/phobrla/Library/Mobile Documents/com~apple~CloudDocs/Downloads/competency maps/canonical_competencies_carilion_v25.json",
+		"/Users/phobrla/Library/Mobile Documents/com~apple~CloudDocs/Downloads/competency maps/canonical_competencies_carilion_v24.json",
+		"/Users/phobrla/Library/Mobile Documents/com~apple~CloudDocs/Downloads/competency maps/canonical_competencies_carilion_v23.json",
+		"/Users/phobrla/Library/Mobile Documents/com~apple~CloudDocs/Downloads/competency maps/precursor_powerschool_kudos_competency_map.json",
+		"/Users/phobrla/Library/Mobile Documents/com~apple~CloudDocs/Downloads/competency maps/powerschool_kudos_plus_revisions.json",
+		"/Users/phobrla/Library/Mobile Documents/com~apple~CloudDocs/Downloads/competency maps/canonical_competency_map_v7_batch006.json",
+		"/Users/phobrla/Library/Mobile Documents/com~apple~CloudDocs/Downloads/competency maps/canonical_competency_map_v7_batch006_v2.json",
+		"/Users/phobrla/Library/Mobile Documents/com~apple~CloudDocs/Downloads/competency maps/canonical_competency_carilion_001_to_010.json",
+		"/Users/phobrla/Library/Mobile Documents/com~apple~CloudDocs/Downloads/competency maps/canonical_competencies_carilion_v1.json",
+		"/Users/phobrla/Library/Mobile Documents/com~apple~CloudDocs/Downloads/competency maps/canonical_competencies_carilion_v2.json",
+		"/Users/phobrla/Library/Mobile Documents/com~apple~CloudDocs/Downloads/competency maps/canonical_competencies_carilion_v3.json",
+		"/Users/phobrla/Library/Mobile Documents/com~apple~CloudDocs/Downloads/competency maps/canonical_competencies_carilion_v4.json",
+		"/Users/phobrla/Library/Mobile Documents/com~apple~CloudDocs/Downloads/competency maps/canonical_competencies_carilion_v5.json",
+		"/Users/phobrla/Library/Mobile Documents/com~apple~CloudDocs/Downloads/competency maps/canonical_competencies_carilion_v6.json",
+		"/Users/phobrla/Library/Mobile Documents/com~apple~CloudDocs/Downloads/competency maps/canonical_competencies_carilion_v7.json",
+		"/Users/phobrla/Library/Mobile Documents/com~apple~CloudDocs/Downloads/competency maps/canonical_competencies_carilion_v8.json",
+		"/Users/phobrla/Library/Mobile Documents/com~apple~CloudDocs/Downloads/competency maps/canonical_competencies_carilion_v9.json",
+		"/Users/phobrla/Library/Mobile Documents/com~apple~CloudDocs/Downloads/competency maps/canonical_competencies_carilion_v10.json",
+		"/Users/phobrla/Library/Mobile Documents/com~apple~CloudDocs/Downloads/competency maps/canonical_competencies_carilion_v11.json",
+		"/Users/phobrla/Library/Mobile Documents/com~apple~CloudDocs/Downloads/competency maps/canonical_competencies_carilion_v12.json",
+		"/Users/phobrla/Library/Mobile Documents/com~apple~CloudDocs/Downloads/competency maps/canonical_competencies_carilion_v13.json",
+		"/Users/phobrla/Library/Mobile Documents/com~apple~CloudDocs/Downloads/competency maps/canonical_competencies_carilion_v14.json",
+		"/Users/phobrla/Library/Mobile Documents/com~apple~CloudDocs/Downloads/competency maps/canonical_competencies_carilion_v17.json",
+		"/Users/phobrla/Library/Mobile Documents/com~apple~CloudDocs/Downloads/competency maps/canonical_competencies_carilion_v18.json",
+		"/Users/phobrla/Library/Mobile Documents/com~apple~CloudDocs/Downloads/competency maps/canonical_competencies_carilion_v19.json"
+	],
+	"find":
+	{
+		"height": 27.0
+	},
+	"find_in_files":
+	{
+		"height": 101.0,
+		"where_history":
+		[
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": true,
+		"replace_history":
+		[
+		],
+		"reverse": false,
+		"scrollbar_highlights": true,
+		"show_context": true,
+		"use_buffer2": true,
+		"use_gitignore": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"sheets":
+			[
+				{
+					"buffer": 0,
+					"file": "mac/open_in_safari.command",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 7098,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								7098,
+								7098
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/ShellScript/Zsh.sublime-syntax",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 3516.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 4,
+					"stack_multiselect": false,
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"file": "extension/manifest.json",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 969,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								969,
+								969
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/JSON/JSON.sublime-syntax",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 3,
+					"stack_multiselect": false,
+					"type": "text"
+				},
+				{
+					"buffer": 2,
+					"file": "CHANGELOG.md",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 907,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								907,
+								907
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Markdown/Markdown.sublime-syntax",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 2,
+					"stack_multiselect": false,
+					"type": "text"
+				},
+				{
+					"buffer": 3,
+					"file": "README.md",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 4716,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								4716,
+								4716
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Markdown/Markdown.sublime-syntax",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 1629.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 1,
+					"stack_multiselect": false,
+					"type": "text"
+				},
+				{
+					"buffer": 4,
+					"file": "REPO.md",
+					"selected": true,
+					"semi_transient": true,
+					"settings":
+					{
+						"buffer_size": 441,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								441,
+								441
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Markdown/Markdown.sublime-syntax"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 0,
+					"stack_multiselect": false,
+					"type": "text"
+				}
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 27.0
+	},
+	"input":
+	{
+		"height": 39.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.exec":
+	{
+		"height": 360.0,
+		"history":
+		[
+		]
+	},
+	"output.find_results":
+	{
+		"height": 0.0,
+		"history":
+		[
+		]
+	},
+	"pinned_build_system": "Packages/User/Python (venv auto).sublime-build",
+	"project": "edge-open-in-safari.sublime-project",
+	"replace":
+	{
+		"height": 50.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_symbol":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"selected_group": 0,
+	"settings":
+	{
+	},
+	"show_minimap": true,
+	"show_open_files": true,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 445.0,
+	"status_bar_visible": true,
+	"template_settings":
+	{
+	}
+}

@@ -1,6 +1,6 @@
 #!/bin/zsh
 # Filename: open_in_safari.command
-# Version: 1.0.0
+# Version: 1.2.0
 # set -x for verbose tracing if needed
 set -euo pipefail
 IFS=$'\n\t'
@@ -8,6 +8,7 @@ IFS=$'\n\t'
 # What it does:
 # - Installs and starts a user LaunchAgent that runs open_in_safari_server.py
 # - Detects Parallels vnic IPs and shows you the host IP(s), port, and token
+# - Builds the Edge extension PNG icons (16/32/48/128) from extension/icons/icon.svg
 # - Double-click friendly: no arguments required
 #
 # Prerequisites:
@@ -39,6 +40,12 @@ INSTALL_LAUNCH_AGENT=true
 DRY_RUN=false
 VERBOSE=true
 
+# Icon generation
+# If you replace the SVG with your own (e.g., SF Symbol export), these sizes will be produced.
+ICON_SIZES=(16 32 48 128)
+ICON_SVG_REL="../extension/icons/icon.svg"
+ICON_DIR_REL="../extension/icons"
+
 ################################
 # Internals
 ################################
@@ -47,6 +54,8 @@ SERVER_PY="${SCRIPT_DIR}/open_in_safari_server.py"
 LAUNCH_NAME="com.phobrla.open-in-safari"
 LAUNCH_PLIST="${HOME}/Library/LaunchAgents/${LAUNCH_NAME}.plist"
 PYTHON_BIN="/usr/bin/python3"
+ICON_SVG="${SCRIPT_DIR}/${ICON_SVG_REL}"
+ICON_DIR="${SCRIPT_DIR}/${ICON_DIR_REL}"
 
 log() { if [[ "${VERBOSE}" == "true" ]]; then echo "$@"; fi }
 run() { if [[ "${DRY_RUN}" == "true" ]]; then echo "[DRY_RUN] $@"; else eval "$@"; fi }
@@ -133,6 +142,39 @@ reload_launch_agent() {
   run launchctl kickstart -k "gui/$(id -u)/${LAUNCH_NAME}"
 }
 
+generate_icons() {
+  mkdir -p "${ICON_DIR}"
+
+  if [[ ! -f "${ICON_SVG}" ]]; then
+    echo "Icon SVG not found at ${ICON_SVG}. Please ensure extension/icons/icon.svg exists." >&2
+    return
+  fi
+
+  log "Generating PNG icons from ${ICON_SVG} -> ${ICON_DIR}"
+
+  # Use Quick Look to render a large PNG from the SVG.
+  # qlmanage creates ${ICON_SVG}.png in the output directory.
+  local tmpdir
+  tmpdir="$(mktemp -d)"
+  /usr/bin/qlmanage -t -s 512 -o "${tmpdir}" "${ICON_SVG}" >/dev/null 2>&1 || true
+
+  local base_png="${tmpdir}/$(basename "${ICON_SVG}").png"
+  if [[ ! -f "${base_png}" ]]; then
+    echo "Quick Look could not render SVG. You can replace PNGs manually or export from SF Symbols." >&2
+    rm -rf "${tmpdir}"
+    return
+  fi
+
+  # Produce each size with sips
+  for sz in "${ICON_SIZES[@]}"; do
+    local out="${ICON_DIR}/icon${sz}.png"
+    /usr/bin/sips -Z "${sz}" "${base_png}" --out "${out}" >/dev/null
+    log "Wrote ${out}"
+  done
+
+  rm -rf "${tmpdir}"
+}
+
 show_info_dialog() {
   local host_ips=("$@")
   local ips_text
@@ -152,6 +194,10 @@ Configure the Edge extension Options:
 - Port: ${PORT}
 - Token: ${SHARED_TOKEN}
 
+Icons:
+- PNG icons were generated from extension/icons/icon.svg (Safari SF Symbol).
+- Replace the SVG (if needed) and rerun this script to regenerate.
+
 Then click the toolbar button or use Alt+Shift+S."
   /usr/bin/osascript <<OSA
 display dialog "${msg}" with title "Open in Safari (Mac helper)" buttons {"OK"} default button "OK"
@@ -165,6 +211,9 @@ main() {
     echo "Server script not found at ${SERVER_PY}" >&2
     exit 1
   fi
+
+  # Build icons before starting services, so the extension has assets ready
+  generate_icons
 
   mkdir -p "${HOME}/Library/LaunchAgents"
 
